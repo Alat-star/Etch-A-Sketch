@@ -27,7 +27,7 @@ window.onload = cellRepeat(16);
 
 function cellRepeat (input) {
     
-    grid.setAttribute('style', `display: grid; background-color: red; border: 1px solid black; place-items: center; justify-content: center; grid-template-columns: repeat(${input}, 1fr); grid-template-rows: repeat(${input}, 1fr)`);
+    grid.setAttribute('style', `display: grid; border: 1px solid black; place-items: center; justify-content: center; grid-template-columns: repeat(${input}, 1fr); grid-template-rows: repeat(${input}, 1fr)`);
     grid.textContent = '';
 
     for ( let i = 0; i < (input ** 2); i++ ) {

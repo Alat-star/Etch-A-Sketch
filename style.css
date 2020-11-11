@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #ccc;
+    height: 100vh;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr ;
+  
+    justify-content: center;
+    /* align-content: center; */
+
+}
+
+.container {
+
+display: grid;
+grid-gap: 20px;
+grid-template-columns:  1fr 1fr auto auto;
+align-content: center;
+place-items: center;
+padding: 10px;
+}

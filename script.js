@@ -17,17 +17,17 @@ colorBtn.setAttribute('style', 'justify-self: center; background: linear-gradien
 const para = document.createElement('p');
 para.textContent = 'Enter number within range of 5 - 100';
 header.insertBefore(para, clearWindow);
-inputs.setAttribute('style', 'justify-self: stretch; min-height: 2rem')
+inputs.setAttribute('style', 'justify-self: stretch; min-height: 2rem; text-align: center')
 
 // 
  
 
 
-window.onload = cellRepeat(16);
+window.onload = cellRepeat(25);
 
 function cellRepeat (input) {
     
-    grid.setAttribute('style', `display: grid; border: 1px solid black; place-items: center; justify-content: center; grid-template-columns: repeat(${input}, 1fr); grid-template-rows: repeat(${input}, 1fr)`);
+    grid.setAttribute('style', `display: grid; border: 1px solid black; justify-content: center; align-content: center; grid-template-columns: repeat(${input}, 1fr); grid-template-rows: repeat(${input}, 1fr)`);
     grid.textContent = '';
 
     for ( let i = 0; i < (input ** 2); i++ ) {
